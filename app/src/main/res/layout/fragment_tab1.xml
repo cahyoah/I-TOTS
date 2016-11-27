@@ -1,0 +1,98 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/fr_image"
+        android:layout_width="match_parent"
+        android:background="@drawable/gambar2"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:background="#AA000000"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="20dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pergi Berlibur"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:fillViewport="false"
+        android:layout_above="@+id/btn_click_me1"
+        android:layout_below="@+id/fr_image"
+        android:id ="@+id/scroll"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fr_image"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:id="@+id/textView"
+                android:text="Liburan selalu bisa menjadi kata yang paling membuat orang merasa senang hanya dengan membayangkannya saja. Namun, liburan juga bisa saja menjadi hal yang tidak menyenangkan, terutama saat liburan tidak terencana dengan baik."
+                android:layout_gravity="center_vertical"
+                />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="17sp"
+            android:textColor="#000"
+            android:id="@+id/textView2"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/textView"
+            android:text="Lalu bagaimana agar Anda dapat menikmati liburan anda? Silahkan tekan tombol dibawah ini"/>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start Tips"
+        android:background="@android:color/holo_red_light"
+        android:id="@+id/btn_click_me1"
+        android:textColor="@android:color/white"
+        android:elevation="0dp"
+        android:fontFamily="sans-serif-medium"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
